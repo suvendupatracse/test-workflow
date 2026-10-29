@@ -1,4 +1,4 @@
-name: Checkout on push
+name: test dev
 
 on:
   push:
