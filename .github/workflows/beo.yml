@@ -1,0 +1,22 @@
+name: test dev
+
+on:
+  push:
+    branches:
+      - dev
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: Select the environment
+        type: choice
+        required: true
+        options:
+          - dev
+          - qa
+
+jobs:
+  checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
