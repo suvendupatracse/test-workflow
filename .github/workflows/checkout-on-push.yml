@@ -30,4 +30,8 @@ jobs:
       - name: Continue after approval
         run: echo "Approval granted for ${{ inputs.environment || 'dev' }}"
       - name: Print DOOM
+<<<<<<< Updated upstream
         run: echo "DOOM=$DOOM"
+=======
+        run: echo "DOOM=$DOOM"
+>>>>>>> Stashed changes
